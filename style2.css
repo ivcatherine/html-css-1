@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Dosis ExtraLight";
+    src: url("fonts/dosis-extralight.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url("images/back.jpg") fixed center center no-repeat;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: cover;
+    font-family: 'Dosis ExtraLight', arial, serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.box{
+    background: #ffffff;
+    box-shadow: 0 0 21px rgba(0,0,0,0.4) ;
+    border-radius: 5px;
+    display: flex;
+}
+
+.city{
+    background: url("images/tokyo.png") no-repeat;
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.column{
+    display: flex;
+    /*justify-content: flex-end;*/
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 50%;
+    min-width: 20vw;
+    min-height: 60vh;
+}
+.info{
+    justify-content: center;
+}
+.degree{
+    color: #771921;
+    font-size: 10vmin;
+}
+.weather{
+    font-size: 36px;
+    background-color: rgba(46, 28, 37, 0.9);
+}
+.place{
+    font-size: 22px;
+    background-color: rgba(119, 25, 33, 0.9);
+    border-bottom-left-radius: 5px;
+}
+.stripe{
+    width: 100%;
+    height: 20%;
+    align-self: center;
+    color: #ffffff;
+    padding-top: 5%;
+}
+
+.sun{
+    margin: auto;
+}
