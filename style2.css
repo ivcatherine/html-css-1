@@ -4,6 +4,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
 body{
     margin: 0;
     padding: 0;
@@ -23,6 +25,8 @@ body{
 .box{
     background: #ffffff;
     box-shadow: 0 0 21px rgba(0,0,0,0.4) ;
+    -webkit-box-shadow: 0 0 21px rgba(0,0,0,0.4) ;
+    -moz-box-shadow: 0 0 21px rgba(0,0,0,0.4) ;
     border-radius: 5px;
     display: flex;
 }
@@ -35,7 +39,6 @@ body{
 }
 .column{
     display: flex;
-    /*justify-content: flex-end;*/
     align-items: center;
     flex-direction: column;
     flex-basis: 50%;
@@ -68,4 +71,26 @@ body{
 
 .sun{
     margin: auto;
+}
+
+@media (max-width: 600px) {
+    .box{
+        flex-direction: column;
+    }
+    .column{
+        min-height: 50%;
+    }
+    .info{
+        padding: 2vh;
+    }
+    .place{
+        border-radius: 0;
+    }
+    .city{
+        border-top-right-radius: 5px;
+    }
+    .sun{
+        margin: auto;
+        padding: 2vh;
+    }
 }
